@@ -52,377 +52,489 @@ class HomeScreen extends StatelessWidget {
       ),
       body: Padding(
         padding: const EdgeInsets.all(18.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children:
-          [
-            Row(
+        child: Stack(
+          alignment: Alignment.bottomCenter,
+          children: [
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children:
               [
-                Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color: Colors.black12,
-                  ),
-                  padding: EdgeInsets.all(11.0),
-                  child: Row(
-                    children:
-                    [
-                      Icon(
-                        Icons.search_outlined,
+                Row(
+                  children:
+                  [
+                    Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.black12,
                       ),
-                      SizedBox(
-                        width : 10.0,
+                      padding: EdgeInsets.all(11.0),
+                      child: Row(
+                        children:
+                        [
+                          Icon(
+                            Icons.search_outlined,
+                          ),
+                          SizedBox(
+                            width : 10.0,
+                          ),
+                          Text(
+                            'Search product here',
+                            style: TextStyle(
+                              color: Colors.grey,
+                            ),
+                          ),
+                          SizedBox(
+                            width : 90.0,
+                          ),
+                        ],
                       ),
-                      Text(
-                        'Search product here',
-                        style: TextStyle(
-                          color: Colors.grey,
+                    ),
+                    SizedBox(
+                      width : 20.0,
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.black12,
+                      ),
+                      child: IconButton(
+                        onPressed: (){},
+                        icon: Icon(
+                          Icons.menu_outlined,
+                          color: Colors.black12,
                         ),
                       ),
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  height: 20.0,
+                ),
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: [
+                      Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children:
+                          [
+                            Container(
+                              height: 60,
+                              width: 60,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10),
+                                border: Border.all(
+                                  color: Colors.grey,
+                                ),
+                              ),
+                              child: IconButton(
+                                onPressed: (){},
+                                icon: Icon(
+                                  Icons.bakery_dining,
+                                  color: Colors.black45,
+                                  size: 40,
+                                ),
+                              ),
+                            ),
+                            SizedBox(
+                              height : 10.0,
+                            ),
+                            Column(
+                              children:
+                              [
+                                Text(
+                                  'Bakery',
+                                  style: TextStyle(
+                                    color: Colors.black45,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
                       SizedBox(
-                        width : 90.0,
+                          width: 15.0,
+                        ),
+                      Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children:
+                          [
+                            Container(
+                              height: 60,
+                              width: 60,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10),
+                                border: Border.all(
+                                  color: Colors.grey,
+                                ),
+                              ),
+                              child: IconButton(
+                                onPressed: (){},
+                                icon: Icon(
+                                  LineIcons.apple,
+                                  color: Colors.black45,
+                                  size: 40,
+                                ),
+                              ),
+                            ),
+                            SizedBox(
+                              height : 10.0,
+                            ),
+                            Column(
+                              children:
+                              [
+                                Text(
+                                  'Fruits',
+                                  style: TextStyle(
+                                    color: Colors.black45,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      SizedBox(
+                          width: 15.0,
+                        ),
+                      Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children:
+                          [
+                            Container(
+                              height: 60,
+                              width: 60,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10),
+                                border: Border.all(
+                                  color: Colors.grey,
+                                ),
+                              ),
+                              child: IconButton(
+                                onPressed: (){},
+                                icon: Icon(
+                                  LineIcons.carrot,
+                                  color: Colors.black45,
+                                  size: 40,
+                                ),
+                              ),
+                            ),
+                            SizedBox(
+                              height : 10.0,
+                            ),
+                            Column(
+                              children:
+                              [
+                                Text(
+                                  'Vegetables',
+                                  style: TextStyle(
+                                    color: Colors.black45,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      SizedBox(
+                        width: 15.0,
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children:
+                        [
+                          Container(
+                            height: 60,
+                            width: 60,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              border: Border.all(
+                                color: Colors.grey,
+                              ),
+                            ),
+                            child: IconButton(
+                              onPressed: (){},
+                              icon: Icon(
+                                LineIcons.drumstickWithBiteTakenOut,
+                                color: Colors.black45,
+                                size: 40,
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            height : 10.0,
+                          ),
+                          Column(
+                            children:
+                            [
+                              Text(
+                                'Chicken',
+                                style: TextStyle(
+                                  color: Colors.black45,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                      SizedBox(
+                        width: 15.0,
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children:
+                        [
+                          Container(
+                            height: 60,
+                            width: 60,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              border: Border.all(
+                                color: Colors.grey,
+                              ),
+                            ),
+                            child: IconButton(
+                              onPressed: (){},
+                              icon: Icon(
+                                LineIcons.bone,
+                                color: Colors.black45,
+                                size: 40,
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            height : 10.0,
+                          ),
+                          Column(
+                            children:
+                            [
+                              Text(
+                                'Meat',
+                                style: TextStyle(
+                                  color: Colors.black45,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                      SizedBox(
+                        width: 15.0,
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children:
+                        [
+                          Container(
+                            height: 60,
+                            width: 60,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              border: Border.all(
+                                color: Colors.grey,
+                              ),
+                            ),
+                            child: IconButton(
+                              onPressed: (){},
+                              icon: Icon(
+                                LineIcons.fish,
+                                color: Colors.black45,
+                                size: 40,
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            height : 10.0,
+                          ),
+                          Column(
+                            children:
+                            [
+                              Text(
+                                'Fish',
+                                style: TextStyle(
+                                  color: Colors.black45,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                      SizedBox(
+                        width: 15.0,
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children:
+                        [
+                          Container(
+                            height: 60,
+                            width: 60,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              border: Border.all(
+                                color: Colors.grey,
+                              ),
+                            ),
+                            child: IconButton(
+                              onPressed: (){},
+                              icon: Icon(
+                                Icons.local_florist_outlined,
+                                color: Colors.black45,
+                                size: 40,
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            height : 10.0,
+                          ),
+                          Column(
+                            children:
+                            [
+                              Text(
+                                'Plants',
+                                style: TextStyle(
+                                  color: Colors.black45,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
                       ),
                     ],
                   ),
                 ),
                 SizedBox(
-                  width : 20.0,
+                  height: 25.0,
                 ),
-                Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color: Colors.black12,
-                  ),
-                  child: IconButton(
-                    onPressed: (){},
-                    icon: Icon(
-                      Icons.menu_outlined,
-                      color: Colors.black12,
-                    ),
-                  ),
-                ),
-              ],
-            ),
-            SizedBox(
-              height: 20.0,
-            ),
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
-                children: [
-                  Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children:
-                      [
-                        Container(
-                          height: 60,
-                          width: 60,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            border: Border.all(
-                              color: Colors.grey,
-                            ),
-                          ),
-                          child: IconButton(
-                            onPressed: (){},
-                            icon: Icon(
-                              Icons.bakery_dining,
-                              color: Colors.black45,
-                              size: 40,
-                            ),
-                          ),
-                        ),
-                        SizedBox(
-                          height : 10.0,
-                        ),
-                        Column(
-                          children:
-                          [
-                            Text(
-                              'Bakery',
-                              style: TextStyle(
-                                color: Colors.black45,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  SizedBox(
-                      width: 15.0,
-                    ),
-                  Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children:
-                      [
-                        Container(
-                          height: 60,
-                          width: 60,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            border: Border.all(
-                              color: Colors.grey,
-                            ),
-                          ),
-                          child: IconButton(
-                            onPressed: (){},
-                            icon: Icon(
-                              LineIcons.apple,
-                              color: Colors.black45,
-                              size: 40,
-                            ),
-                          ),
-                        ),
-                        SizedBox(
-                          height : 10.0,
-                        ),
-                        Column(
-                          children:
-                          [
-                            Text(
-                              'Fruits',
-                              style: TextStyle(
-                                color: Colors.black45,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  SizedBox(
-                      width: 15.0,
-                    ),
-                  Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children:
-                      [
-                        Container(
-                          height: 60,
-                          width: 60,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            border: Border.all(
-                              color: Colors.grey,
-                            ),
-                          ),
-                          child: IconButton(
-                            onPressed: (){},
-                            icon: Icon(
-                              LineIcons.carrot,
-                              color: Colors.black45,
-                              size: 40,
-                            ),
-                          ),
-                        ),
-                        SizedBox(
-                          height : 10.0,
-                        ),
-                        Column(
-                          children:
-                          [
-                            Text(
-                              'Vegetables',
-                              style: TextStyle(
-                                color: Colors.black45,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  SizedBox(
-                    width: 15.0,
-                  ),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children:
-                    [
-                      Container(
-                        height: 60,
-                        width: 60,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          border: Border.all(
-                            color: Colors.grey,
-                          ),
-                        ),
-                        child: IconButton(
-                          onPressed: (){},
-                          icon: Icon(
-                            LineIcons.drumstickWithBiteTakenOut,
-                            color: Colors.black45,
-                            size: 40,
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        height : 10.0,
-                      ),
-                      Column(
-                        children:
-                        [
-                          Text(
-                            'Chicken',
-                            style: TextStyle(
-                              color: Colors.black45,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                  SizedBox(
-                    width: 15.0,
-                  ),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children:
-                    [
-                      Container(
-                        height: 60,
-                        width: 60,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          border: Border.all(
-                            color: Colors.grey,
-                          ),
-                        ),
-                        child: IconButton(
-                          onPressed: (){},
-                          icon: Icon(
-                            LineIcons.bone,
-                            color: Colors.black45,
-                            size: 40,
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        height : 10.0,
-                      ),
-                      Column(
-                        children:
-                        [
-                          Text(
-                            'Meat',
-                            style: TextStyle(
-                              color: Colors.black45,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                  SizedBox(
-                    width: 15.0,
-                  ),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children:
-                    [
-                      Container(
-                        height: 60,
-                        width: 60,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          border: Border.all(
-                            color: Colors.grey,
-                          ),
-                        ),
-                        child: IconButton(
-                          onPressed: (){},
-                          icon: Icon(
-                            LineIcons.fish,
-                            color: Colors.black45,
-                            size: 40,
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        height : 10.0,
-                      ),
-                      Column(
-                        children:
-                        [
-                          Text(
-                            'Fish',
-                            style: TextStyle(
-                              color: Colors.black45,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                  SizedBox(
-                    width: 15.0,
-                  ),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children:
-                    [
-                      Container(
-                        height: 60,
-                        width: 60,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          border: Border.all(
-                            color: Colors.grey,
-                          ),
-                        ),
-                        child: IconButton(
-                          onPressed: (){},
-                          icon: Icon(
-                            Icons.local_florist_outlined,
-                            color: Colors.black45,
-                            size: 40,
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        height : 10.0,
-                      ),
-                      Column(
-                        children:
-                        [
-                          Text(
-                            'Plants',
-                            style: TextStyle(
-                              color: Colors.black45,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-            ),
-            SizedBox(
-              height: 25.0,
-            ),
-            Expanded(
-              child: SingleChildScrollView(
-                child: Column(
-                  children: [
-                    Row(
+                Expanded(
+                  child: SingleChildScrollView(
+                    child: Column(
                       children: [
-                        Container(
-                          height: 250,
-                          width: 150,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            border: Border.all(
-                              color: Colors.black12,
-                            ),
-                          ),
-                          child: Stack(
-                            alignment: Alignment.topRight,
-                            children: [
-                              Stack(
-                                alignment: Alignment.bottomRight,
+                        Row(
+                          children: [
+                            Container(
+                              height: 250,
+                              width: 150,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10),
+                                border: Border.all(
+                                  color: Colors.black12,
+                                ),
+                              ),
+                              child: Stack(
+                                alignment: Alignment.topRight,
                                 children: [
                                   Stack(
+                                    alignment: Alignment.bottomRight,
+                                    children: [
+                                      Stack(
+                                        children: [
+                                          Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            mainAxisAlignment: MainAxisAlignment.center,
+                                            children: [
+                                              Image(
+                                                image: NetworkImage(
+                                                  'https://remastrades.com/wp-content/uploads/2020/11/Lemon-600x399.jpg',
+                                                ),
+                                              ),
+                                              SizedBox(
+                                                height: 30.0,
+                                              ),
+                                              Text(
+                                                'Lemon',
+                                                style: TextStyle(
+                                                  fontSize: 25,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                              Text(
+                                                'Bergamo italy',
+                                                style: TextStyle(
+                                                  fontSize: 20,
+                                                  fontWeight: FontWeight.bold,
+                                                  color: Colors.black26,
+                                                ),
+                                              ),
+                                              Row(
+                                                children: [
+                                                  Text(
+                                                    '€1.10',
+                                                    style: TextStyle(
+                                                      fontSize: 20,
+                                                      color: Colors.green,
+                                                    ),
+                                                  ),
+                                                  SizedBox(
+                                                    width: 15.0,
+                                                  ),
+                                                  Text(
+                                                    '€2',
+                                                    style: TextStyle(
+                                                      fontSize: 20,
+                                                      color: Colors.black54,
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                          Container(
+                                            height: 22,
+                                            width: 60,
+                                            color: Colors.orange,
+                                            child: Text(
+                                              ' 25% off',
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                                fontSize: 16,
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                      MaterialButton(
+                                        height: 35,
+                                        minWidth: 10,
+                                        color: Colors.green,
+                                        onPressed: (){},
+                                        child: Text(
+                                          '+',
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 20,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  MaterialButton(
+                                    height: 0,
+                                    minWidth: 0,
+                                    onPressed: (){},
+                                    child: Icon(
+                                      LineIcons.heart,
+                                      color: Colors.black38,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            SizedBox(
+                              width: 23.0,
+                            ),
+                            Container(
+                              height: 250,
+                              width: 150,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10),
+                                border: Border.all(
+                                  color: Colors.black12,
+                                ),
+                              ),
+                              child: Stack(
+                                alignment: Alignment.topRight,
+                                children: [
+                                  Stack(
+                                    alignment: Alignment.bottomRight,
                                     children: [
                                       Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -430,21 +542,24 @@ class HomeScreen extends StatelessWidget {
                                         children: [
                                           Image(
                                             image: NetworkImage(
-                                              'https://remastrades.com/wp-content/uploads/2020/11/Lemon-600x399.jpg',
+                                              'https://www.collinsdictionary.com/images/thumb/banana_64728013_250.jpg?version=4.0.251',
                                             ),
+                                            height: 100,
+                                            width: 150,
+                                            //fit: BoxFit.cover,
                                           ),
                                           SizedBox(
                                             height: 30.0,
                                           ),
                                           Text(
-                                            'Lemon',
+                                            'Banana',
                                             style: TextStyle(
                                               fontSize: 25,
                                               fontWeight: FontWeight.bold,
                                             ),
                                           ),
                                           Text(
-                                            'Bergamo italy',
+                                            'Cattier Italiano',
                                             style: TextStyle(
                                               fontSize: 20,
                                               fontWeight: FontWeight.bold,
@@ -454,7 +569,7 @@ class HomeScreen extends StatelessWidget {
                                           Row(
                                             children: [
                                               Text(
-                                                '€1.10',
+                                                '€2.05',
                                                 style: TextStyle(
                                                   fontSize: 20,
                                                   color: Colors.green,
@@ -464,7 +579,7 @@ class HomeScreen extends StatelessWidget {
                                                 width: 15.0,
                                               ),
                                               Text(
-                                                '€2',
+                                                '€3',
                                                 style: TextStyle(
                                                   fontSize: 20,
                                                   color: Colors.black54,
@@ -474,265 +589,54 @@ class HomeScreen extends StatelessWidget {
                                           ),
                                         ],
                                       ),
-                                      Container(
-                                        height: 22,
-                                        width: 60,
-                                        color: Colors.orange,
+                                      MaterialButton(
+                                        height: 35,
+                                        minWidth: 10,
+                                        color: Colors.green,
+                                        onPressed: (){},
                                         child: Text(
-                                          ' 25% off',
+                                          '+',
                                           style: TextStyle(
                                             color: Colors.white,
-                                            fontSize: 16,
+                                            fontSize: 20,
                                           ),
                                         ),
                                       ),
                                     ],
                                   ),
                                   MaterialButton(
-                                    height: 35,
-                                    minWidth: 10,
-                                    color: Colors.green,
+                                    height: 0,
+                                    minWidth: 0,
                                     onPressed: (){},
-                                    child: Text(
-                                      '+',
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 20,
-                                      ),
+                                    child: Icon(
+                                      LineIcons.heartAlt,
+                                      color: Colors.red,
                                     ),
                                   ),
                                 ],
                               ),
-                              MaterialButton(
-                                height: 0,
-                                minWidth: 0,
-                                onPressed: (){},
-                                child: Icon(
-                                  LineIcons.heart,
-                                  color: Colors.black38,
-                                ),
-                              ),
-                            ],
-                          ),
+                            ),
+                          ],
                         ),
                         SizedBox(
-                          width: 23.0,
+                          height: 15.0,
                         ),
-                        Container(
-                          height: 250,
-                          width: 150,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            border: Border.all(
-                              color: Colors.black12,
-                            ),
-                          ),
-                          child: Stack(
-                            alignment: Alignment.topRight,
-                            children: [
-                              Stack(
-                                alignment: Alignment.bottomRight,
-                                children: [
-                                  Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                      Image(
-                                        image: NetworkImage(
-                                          'https://www.collinsdictionary.com/images/thumb/banana_64728013_250.jpg?version=4.0.251',
-                                        ),
-                                        height: 100,
-                                        width: 150,
-                                        //fit: BoxFit.cover,
-                                      ),
-                                      SizedBox(
-                                        height: 30.0,
-                                      ),
-                                      Text(
-                                        'Banana',
-                                        style: TextStyle(
-                                          fontSize: 25,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                      Text(
-                                        'Cattier Italiano',
-                                        style: TextStyle(
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.black26,
-                                        ),
-                                      ),
-                                      Row(
-                                        children: [
-                                          Text(
-                                            '€2.05',
-                                            style: TextStyle(
-                                              fontSize: 20,
-                                              color: Colors.green,
-                                            ),
-                                          ),
-                                          SizedBox(
-                                            width: 15.0,
-                                          ),
-                                          Text(
-                                            '€3',
-                                            style: TextStyle(
-                                              fontSize: 20,
-                                              color: Colors.black54,
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ],
-                                  ),
-                                  MaterialButton(
-                                    height: 35,
-                                    minWidth: 10,
-                                    color: Colors.green,
-                                    onPressed: (){},
-                                    child: Text(
-                                      '+',
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 20,
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              MaterialButton(
-                                height: 0,
-                                minWidth: 0,
-                                onPressed: (){},
-                                child: Icon(
-                                  LineIcons.heartAlt,
-                                  color: Colors.red,
+                        Row(
+                          children: [
+                            Container(
+                              height: 250,
+                              width: 150,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10),
+                                border: Border.all(
+                                  color: Colors.black12,
                                 ),
                               ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                    SizedBox(
-                      height: 15.0,
-                    ),
-                    Row(
-                      children: [
-                        Container(
-                          height: 250,
-                          width: 150,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            border: Border.all(
-                              color: Colors.black12,
-                            ),
-                          ),
-                          child: Stack(
-                            alignment: Alignment.topRight,
-                            children: [
-                              Stack(
-                                alignment: Alignment.bottomRight,
-                                children: [
-                                  Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                      Image(
-                                        image: NetworkImage(
-                                          'https://www.collinsdictionary.com/images/thumb/grape_229112122_250.jpg?version=4.0.251',
-                                        ),
-                                        height: 100,
-                                        width: 150,
-                                      ),
-                                      SizedBox(
-                                        height: 30.0,
-                                      ),
-                                      Text(
-                                        'Grape',
-                                        style: TextStyle(
-                                          fontSize: 25,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                      Text(
-                                        'Cattier Italiano',
-                                        style: TextStyle(
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.black26,
-                                        ),
-                                      ),
-                                      Row(
-                                        children: [
-                                          Text(
-                                            '€3.15',
-                                            style: TextStyle(
-                                              fontSize: 20,
-                                              color: Colors.green,
-                                            ),
-                                          ),
-                                          SizedBox(
-                                            width: 15.0,
-                                          ),
-                                          Text(
-                                            '€4',
-                                            style: TextStyle(
-                                              fontSize: 20,
-                                              color: Colors.black54,
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ],
-                                  ),
-                                  MaterialButton(
-                                    height: 35,
-                                    minWidth: 10,
-                                    color: Colors.green,
-                                    onPressed: (){},
-                                    child: Text(
-                                      '+',
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 20,
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              MaterialButton(
-                                height: 0,
-                                minWidth: 0,
-                                onPressed: (){},
-                                child: Icon(
-                                  LineIcons.heartAlt,
-                                  color: Colors.red,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        SizedBox(
-                          width: 23.0,
-                        ),
-                        Container(
-                          height: 250,
-                          width: 150,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            border: Border.all(
-                              color: Colors.black12,
-                            ),
-                          ),
-                          child: Stack(
-                            alignment: Alignment.topRight,
-                            children: [
-                              Stack(
-                                alignment: Alignment.bottomRight,
+                              child: Stack(
+                                alignment: Alignment.topRight,
                                 children: [
                                   Stack(
+                                    alignment: Alignment.bottomRight,
                                     children: [
                                       Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -740,7 +644,7 @@ class HomeScreen extends StatelessWidget {
                                         children: [
                                           Image(
                                             image: NetworkImage(
-                                              'https://www.collinsdictionary.com/images/full/orange_342874121_1000.jpg?version=4.0.251',
+                                              'https://www.collinsdictionary.com/images/thumb/grape_229112122_250.jpg?version=4.0.251',
                                             ),
                                             height: 100,
                                             width: 150,
@@ -749,14 +653,14 @@ class HomeScreen extends StatelessWidget {
                                             height: 30.0,
                                           ),
                                           Text(
-                                            'Orange',
+                                            'Grape',
                                             style: TextStyle(
                                               fontSize: 25,
                                               fontWeight: FontWeight.bold,
                                             ),
                                           ),
                                           Text(
-                                            'Bergamo italy',
+                                            'Cattier Italiano',
                                             style: TextStyle(
                                               fontSize: 20,
                                               fontWeight: FontWeight.bold,
@@ -766,7 +670,7 @@ class HomeScreen extends StatelessWidget {
                                           Row(
                                             children: [
                                               Text(
-                                                '€2',
+                                                '€3.15',
                                                 style: TextStyle(
                                                   fontSize: 20,
                                                   color: Colors.green,
@@ -776,7 +680,7 @@ class HomeScreen extends StatelessWidget {
                                                 width: 15.0,
                                               ),
                                               Text(
-                                                '€3.10',
+                                                '€4',
                                                 style: TextStyle(
                                                   fontSize: 20,
                                                   color: Colors.black54,
@@ -786,250 +690,400 @@ class HomeScreen extends StatelessWidget {
                                           ),
                                         ],
                                       ),
-                                      Container(
-                                        height: 22,
-                                        width: 60,
-                                        color: Colors.orange,
+                                      MaterialButton(
+                                        height: 35,
+                                        minWidth: 10,
+                                        color: Colors.green,
+                                        onPressed: (){},
                                         child: Text(
-                                          ' 15% off',
+                                          '+',
                                           style: TextStyle(
                                             color: Colors.white,
-                                            fontSize: 16,
+                                            fontSize: 20,
                                           ),
                                         ),
                                       ),
                                     ],
                                   ),
                                   MaterialButton(
-                                    height: 35,
-                                    minWidth: 10,
-                                    color: Colors.green,
+                                    height: 0,
+                                    minWidth: 0,
                                     onPressed: (){},
-                                    child: Text(
-                                      '+',
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 20,
-                                      ),
+                                    child: Icon(
+                                      LineIcons.heartAlt,
+                                      color: Colors.red,
                                     ),
                                   ),
                                 ],
                               ),
-                              MaterialButton(
-                                height: 0,
-                                minWidth: 0,
-                                onPressed: (){},
-                                child: Icon(
-                                  LineIcons.heart,
-                                  color: Colors.black38,
+                            ),
+                            SizedBox(
+                              width: 23.0,
+                            ),
+                            Container(
+                              height: 250,
+                              width: 150,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10),
+                                border: Border.all(
+                                  color: Colors.black12,
                                 ),
                               ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                    SizedBox(
-                      height: 15.0,
-                    ),
-                    Row(
-                      children: [
-                        Container(
-                          height: 250,
-                          width: 150,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            border: Border.all(
-                              color: Colors.black12,
-                            ),
-                          ),
-                          child: Stack(
-                            alignment: Alignment.topRight,
-                            children: [
-                              Stack(
-                                alignment: Alignment.bottomRight,
+                              child: Stack(
+                                alignment: Alignment.topRight,
                                 children: [
-                                  Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    mainAxisAlignment: MainAxisAlignment.center,
+                                  Stack(
+                                    alignment: Alignment.bottomRight,
                                     children: [
-                                      Image(
-                                        image: NetworkImage(
-                                          'https://www.collinsdictionary.com/images/full/watermelon_222700726_1000.jpg?version=4.0.251',
-                                        ),
-                                        height: 100,
-                                        width: 150,
-                                      ),
-                                      SizedBox(
-                                        height: 30.0,
-                                      ),
-                                      Text(
-                                        'Watermelon',
-                                        style: TextStyle(
-                                          fontSize: 25,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                      Text(
-                                        'Bergamo Italy',
-                                        style: TextStyle(
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.black26,
-                                        ),
-                                      ),
-                                      Row(
+                                      Stack(
                                         children: [
-                                          Text(
-                                            '€1.03',
-                                            style: TextStyle(
-                                              fontSize: 20,
-                                              color: Colors.green,
-                                            ),
+                                          Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            mainAxisAlignment: MainAxisAlignment.center,
+                                            children: [
+                                              Image(
+                                                image: NetworkImage(
+                                                  'https://www.collinsdictionary.com/images/full/orange_342874121_1000.jpg?version=4.0.251',
+                                                ),
+                                                height: 100,
+                                                width: 150,
+                                              ),
+                                              SizedBox(
+                                                height: 30.0,
+                                              ),
+                                              Text(
+                                                'Orange',
+                                                style: TextStyle(
+                                                  fontSize: 25,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                              Text(
+                                                'Bergamo italy',
+                                                style: TextStyle(
+                                                  fontSize: 20,
+                                                  fontWeight: FontWeight.bold,
+                                                  color: Colors.black26,
+                                                ),
+                                              ),
+                                              Row(
+                                                children: [
+                                                  Text(
+                                                    '€2',
+                                                    style: TextStyle(
+                                                      fontSize: 20,
+                                                      color: Colors.green,
+                                                    ),
+                                                  ),
+                                                  SizedBox(
+                                                    width: 15.0,
+                                                  ),
+                                                  Text(
+                                                    '€3.10',
+                                                    style: TextStyle(
+                                                      fontSize: 20,
+                                                      color: Colors.black54,
+                                                    ),
+                                                  ),
+                                                ],
+                                              ),
+                                            ],
                                           ),
-                                          SizedBox(
-                                            width: 15.0,
-                                          ),
-                                          Text(
-                                            '€2',
-                                            style: TextStyle(
-                                              fontSize: 20,
-                                              color: Colors.black54,
+                                          Container(
+                                            height: 22,
+                                            width: 60,
+                                            color: Colors.orange,
+                                            child: Text(
+                                              ' 15% off',
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                                fontSize: 16,
+                                              ),
                                             ),
                                           ),
                                         ],
                                       ),
+                                      MaterialButton(
+                                        height: 35,
+                                        minWidth: 10,
+                                        color: Colors.green,
+                                        onPressed: (){},
+                                        child: Text(
+                                          '+',
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 20,
+                                          ),
+                                        ),
+                                      ),
                                     ],
                                   ),
                                   MaterialButton(
-                                    height: 35,
-                                    minWidth: 10,
-                                    color: Colors.green,
+                                    height: 0,
+                                    minWidth: 0,
                                     onPressed: (){},
-                                    child: Text(
-                                      '+',
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 20,
-                                      ),
+                                    child: Icon(
+                                      LineIcons.heart,
+                                      color: Colors.black38,
                                     ),
                                   ),
                                 ],
                               ),
-                              MaterialButton(
-                                height: 0,
-                                minWidth: 0,
-                                onPressed: (){},
-                                child: Icon(
-                                  LineIcons.heartAlt,
-                                  color: Colors.red,
-                                ),
-                              ),
-                            ],
-                          ),
+                            ),
+                          ],
                         ),
                         SizedBox(
-                          width: 23.0,
+                          height: 15.0,
                         ),
-                        Container(
-                          height: 250,
-                          width: 150,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            border: Border.all(
-                              color: Colors.black12,
-                            ),
-                          ),
-                          child: Stack(
-                            alignment: Alignment.topRight,
-                            children: [
-                              Stack(
-                                alignment: Alignment.bottomRight,
+                        Row(
+                          children: [
+                            Container(
+                              height: 250,
+                              width: 150,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10),
+                                border: Border.all(
+                                  color: Colors.black12,
+                                ),
+                              ),
+                              child: Stack(
+                                alignment: Alignment.topRight,
                                 children: [
-                                  Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    mainAxisAlignment: MainAxisAlignment.center,
+                                  Stack(
+                                    alignment: Alignment.bottomRight,
                                     children: [
-                                      Image(
-                                        image: NetworkImage(
-                                          'https://www.collinsdictionary.com/images/full/strawberry_227472010_1000.jpg?version=4.0.251',
-                                        ),
-                                        height: 100,
-                                        width: 150,
-                                      ),
-                                      SizedBox(
-                                        height: 30.0,
-                                      ),
-                                      Text(
-                                        'Strawbery',
-                                        style: TextStyle(
-                                          fontSize: 25,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                      Text(
-                                        'Cattier Italiano',
-                                        style: TextStyle(
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.black26,
-                                        ),
-                                      ),
-                                      Row(
+                                      Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        mainAxisAlignment: MainAxisAlignment.center,
                                         children: [
-                                          Text(
-                                            '€3.15',
-                                            style: TextStyle(
-                                              fontSize: 20,
-                                              color: Colors.green,
+                                          Image(
+                                            image: NetworkImage(
+                                              'https://www.collinsdictionary.com/images/full/watermelon_222700726_1000.jpg?version=4.0.251',
                                             ),
+                                            height: 100,
+                                            width: 150,
                                           ),
                                           SizedBox(
-                                            width: 15.0,
+                                            height: 30.0,
                                           ),
                                           Text(
-                                            '€4',
+                                            'Watermelon',
                                             style: TextStyle(
-                                              fontSize: 20,
-                                              color: Colors.black54,
+                                              fontSize: 25,
+                                              fontWeight: FontWeight.bold,
                                             ),
                                           ),
+                                          Text(
+                                            'Bergamo Italy',
+                                            style: TextStyle(
+                                              fontSize: 20,
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.black26,
+                                            ),
+                                          ),
+                                          Row(
+                                            children: [
+                                              Text(
+                                                '€1.03',
+                                                style: TextStyle(
+                                                  fontSize: 20,
+                                                  color: Colors.green,
+                                                ),
+                                              ),
+                                              SizedBox(
+                                                width: 15.0,
+                                              ),
+                                              Text(
+                                                '€2',
+                                                style: TextStyle(
+                                                  fontSize: 20,
+                                                  color: Colors.black54,
+                                                ),
+                                              ),
+                                            ],
+                                          ),
                                         ],
+                                      ),
+                                      MaterialButton(
+                                        height: 35,
+                                        minWidth: 10,
+                                        color: Colors.green,
+                                        onPressed: (){},
+                                        child: Text(
+                                          '+',
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 20,
+                                          ),
+                                        ),
                                       ),
                                     ],
                                   ),
                                   MaterialButton(
-                                    height: 35,
-                                    minWidth: 10,
-                                    color: Colors.green,
+                                    height: 0,
+                                    minWidth: 0,
                                     onPressed: (){},
-                                    child: Text(
-                                      '+',
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 20,
-                                      ),
+                                    child: Icon(
+                                      LineIcons.heartAlt,
+                                      color: Colors.red,
                                     ),
                                   ),
                                 ],
                               ),
-                              MaterialButton(
-                                height: 0,
-                                minWidth: 0,
-                                onPressed: (){},
-                                child: Icon(
-                                  LineIcons.heartAlt,
-                                  color: Colors.red,
+                            ),
+                            SizedBox(
+                              width: 23.0,
+                            ),
+                            Container(
+                              height: 250,
+                              width: 150,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10),
+                                border: Border.all(
+                                  color: Colors.black12,
                                 ),
                               ),
-                            ],
-                          ),
+                              child: Stack(
+                                alignment: Alignment.topRight,
+                                children: [
+                                  Stack(
+                                    alignment: Alignment.bottomRight,
+                                    children: [
+                                      Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: [
+                                          Image(
+                                            image: NetworkImage(
+                                              'https://www.collinsdictionary.com/images/full/strawberry_227472010_1000.jpg?version=4.0.251',
+                                            ),
+                                            height: 100,
+                                            width: 150,
+                                          ),
+                                          SizedBox(
+                                            height: 30.0,
+                                          ),
+                                          Text(
+                                            'Strawbery',
+                                            style: TextStyle(
+                                              fontSize: 25,
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                          Text(
+                                            'Cattier Italiano',
+                                            style: TextStyle(
+                                              fontSize: 20,
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.black26,
+                                            ),
+                                          ),
+                                          Row(
+                                            children: [
+                                              Text(
+                                                '€3.15',
+                                                style: TextStyle(
+                                                  fontSize: 20,
+                                                  color: Colors.green,
+                                                ),
+                                              ),
+                                              SizedBox(
+                                                width: 15.0,
+                                              ),
+                                              Text(
+                                                '€4',
+                                                style: TextStyle(
+                                                  fontSize: 20,
+                                                  color: Colors.black54,
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ],
+                                      ),
+                                      MaterialButton(
+                                        height: 35,
+                                        minWidth: 10,
+                                        color: Colors.green,
+                                        onPressed: (){},
+                                        child: Text(
+                                          '+',
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 20,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                  MaterialButton(
+                                    height: 0,
+                                    minWidth: 0,
+                                    onPressed: (){},
+                                    child: Icon(
+                                      LineIcons.heartAlt,
+                                      color: Colors.red,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
                         ),
                       ],
                     ),
-                  ],
+                  ),
                 ),
-              ),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children:
+              [
+                Container(
+                  height: 60,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(5),
+                    color: Colors.white,
+                  ),
+                  padding: EdgeInsets.all(10.0),
+                  child: Row(
+                    children:
+                    [
+                      Text(
+                        'Total: ',
+                        style: TextStyle(
+                          color: Colors.black38,
+                          fontSize: 25,
+                        ),
+                      ),
+                      Text(
+                        '3X €49.5',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 20,
+                        ),
+                      ),
+                      SizedBox(
+                        width: 110.0,
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(5),
+                          color: Colors.blue,
+                        ),
+                        child: IconButton(
+                          onPressed: (){},
+                          icon: Icon(
+                            LineIcons.shoppingCart,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
             ),
           ],
         ),
