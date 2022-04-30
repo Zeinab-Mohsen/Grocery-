@@ -1,20 +1,6 @@
-import 'package:phase_2/home_screen.dart';
-import 'package:phase_2/login_page.dart';
 import 'package:flutter/material.dart';
+import 'package:phase_2/src/app_root.dart';
 
 void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context)
-  {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: LoginPage(),
-    );
-  }
+  runApp(AppRoot());
 }
